@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+     
+    <style>
+ h1{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: black;
+        color: beige;
+        font-size: 60px;
+ }
+ body{
+    background-color: rgb(10, 204, 218);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+ }
+ footer {
+ background-color: #107cc5;
+ font-family: "Sofia", sans-serif;
+     
+ }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>DIGITAL CLOCK</h1>
+    <p id="clock"></p>
+
+    <script>
+        setInterval(() => 
+        {
+            let a = new Date();
+            console.log(a);
+            document.getElementById("clock").innerHTML = a.getHours() + ": " + a.getMinutes() + ": " + a.getSeconds();
+        }, 1000);
+    </script>
+    <img src="Clock.gif" alt="image"height="200px"width="200px">
+    
+    <br/><br/>    <br/>
+    <footer >
+        Made by sanika ghodake 
+    </footer>
+</body>
+</html>
